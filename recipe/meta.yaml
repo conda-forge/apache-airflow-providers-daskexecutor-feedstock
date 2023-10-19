@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-daskexecutor" %}
-{% set version = "1.0.1" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-daskexecutor-{{ version }}.tar.gz
-  sha256: 128f313d8645913c9738627eede4bc8812480f7aba741da3ea8df0d977e49d3b
+  sha256: 0bce30e0332d81bb43374dd15c2eab2be4cf8eff6ad7686c3258a94a5e269fc5
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - apache-airflow >=2.4.0
+    - apache-airflow >=2.5.0
     - cloudpickle >=1.4.1
     - dask-core >=2.9.0,!=2022.10.1,!=2023.5.0
     - distributed >=2.11.1,!=2023.5.0
