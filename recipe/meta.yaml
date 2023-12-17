@@ -1,13 +1,13 @@
 {% set name = "apache-airflow-providers-daskexecutor" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-daskexecutor-{{ version }}.tar.gz
-  sha256: 0bce30e0332d81bb43374dd15c2eab2be4cf8eff6ad7686c3258a94a5e269fc5
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: c0fa1c7cab9c64782069992637f6b55d71ea3ae9f1393e6d7ace64120cb65e9a
 
 build:
   noarch: python
